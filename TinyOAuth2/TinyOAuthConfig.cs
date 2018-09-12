@@ -1,4 +1,4 @@
-namespace TinyOAuth1
+namespace TinyOAuth2
 {
 	public class TinyOAuthConfig
 	{
@@ -25,5 +25,7 @@ namespace TinyOAuth1
 		public string AccessTokenUrl { get; set; }
 		public string AuthorizeTokenUrl { get; set; }
 		public string RequestTokenUrl { get; set; }
+        public string CallbackUrl { get; set; }
+		public string Realm { get; set; }
 	}
 }

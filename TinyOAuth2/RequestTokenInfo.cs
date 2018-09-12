@@ -1,4 +1,4 @@
-﻿namespace TinyOAuth1
+﻿namespace TinyOAuth2
 {
 	public class RequestTokenInfo
 	{

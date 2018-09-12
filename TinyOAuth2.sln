@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyOAuth1", "TinyOAuth1\TinyOAuth1.csproj", "{2A1430F7-86E2-4F13-AB3A-75909FDF553A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyOAuth2", "TinyOAuth2\TinyOAuth2.csproj", "{D4641036-06A5-49A1-A06B-A682378230AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2A1430F7-86E2-4F13-AB3A-75909FDF553A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A1430F7-86E2-4F13-AB3A-75909FDF553A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A1430F7-86E2-4F13-AB3A-75909FDF553A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A1430F7-86E2-4F13-AB3A-75909FDF553A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4641036-06A5-49A1-A06B-A682378230AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4641036-06A5-49A1-A06B-A682378230AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4641036-06A5-49A1-A06B-A682378230AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4641036-06A5-49A1-A06B-A682378230AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

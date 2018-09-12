@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TinyOAuth1
+namespace TinyOAuth2
 {
 	//https://oauth.net/core/1.0a/
 	//https://oauth1.wp-api.org/docs/basics/Auth-Flow.html
@@ -322,11 +322,14 @@ namespace TinyOAuth1
 				"oauth_timestamp=" + timeStamp,
 				"oauth_nonce=" + nonce,
 				"oauth_version=1.0",
-				"oauth_callback=oob" //TODO: Add parameter so it can be used :)
+				"oauth_callback=" + Uri.EscapeDataString(_config.CallbackUrl),
 			};
 
-			// Appendix A.5.1. Generating Signature Base String
-			var singatureBaseString = GetSignatureBaseString("POST", _config.RequestTokenUrl, requestParameters);
+            if (!string.IsNullOrWhiteSpace(_config.Realm))
+                requestParameters.Add("realm=" + Uri.EscapeDataString(_config.Realm));
+
+            // Appendix A.5.1. Generating Signature Base String
+            var singatureBaseString = GetSignatureBaseString("POST", _config.RequestTokenUrl, requestParameters);
 
 			// Appendix A.5.2. Calculating Signature Value
 			var signature = GetSignature(singatureBaseString, _config.ConsumerSecret);

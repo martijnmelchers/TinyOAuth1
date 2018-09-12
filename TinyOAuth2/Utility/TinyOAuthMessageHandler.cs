@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace TinyOAuth1
+namespace TinyOAuth2
 {
 	public class TinyOAuthMessageHandler : DelegatingHandler
 	{

@@ -2,7 +2,7 @@
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace TinyOAuth1
+namespace TinyOAuth2
 {
 	public interface ITinyOAuth
 	{
